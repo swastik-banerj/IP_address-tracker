@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Meow+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+IN:wght@100..400&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+.rubik{
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header>h1{
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+/* For Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.searchBar{
+    display: flex;
+    max-width: 600px;
+}
+input{
+    padding: 12px;
+    width: 27rem;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+}
+button{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+svg,button{
+    background-color: black;
+}
+.header{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    background-image: url("pattern-bg-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#map{
+    height: 70vh;
+    width: 100%;
+}
+
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    .header {
+        height: 35vh;
+        padding: 15px;
+    }
+
+    .header > h1 {
+        font-size: 1.8rem;
+    }
+
+    .searchBar {
+        width: 100%;
+    }
+
+    input {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    button {
+        padding: 10px;
+    }
+
+    #map {
+        height: 65vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        height: 40vh;
+    }
+
+    .header > h1 {
+        font-size: 1.5rem;
+    }
+
+    .searchBar {
+        
+        width: 70%;
+        gap: 10px;
+    }
+
+    input {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    button {
+        width: 15%;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    #map {
+        height: 60vh;
+    }
+}
